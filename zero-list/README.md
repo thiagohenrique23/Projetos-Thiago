@@ -37,7 +37,7 @@ Ferramentas usadas na construção do projeto:
  
   <td align="center"><a href="https://github.com/future4code/vaughan-Thiago-Araujo"><img style="border-radius: 50%" src="https://user-images.githubusercontent.com/94838711/159173361-05ba2de1-4bb6-4fbe-8ee7-68aa4a4e2c27.jpg" width="100px" alt=""/>
  <br />
- <sub><b>Thiago Henrique</b></sub></a> <a href="https://github.com/future4code/vaughan-Thiago-Araujo">👨🏽‍💻</a></td>
+ <sub><b>Thiago Henrique</b></sub></a> <a href="https://github.com/future4code/vaughan-Thiago-Araujo"></a></td>
  
  </tr>
 </table>
