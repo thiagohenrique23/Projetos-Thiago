@@ -4,6 +4,6 @@
  
  <h1 align="center">
 
-    <a href="questionable-owner.surge.sh">🔗 React</a>
+    <a href="questionable-owner.surge.sh">🔗 Zero List</a>
 </h1>
 <p align="center">Link ☝️</p>
