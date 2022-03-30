@@ -30,7 +30,7 @@ Ferramentas usadas na construção do projeto:
 * Integração com API
 * Axios
 
-<h2 id="desenvolvedores" Desenvolvedores </h2>
+<h2 id="desenvolvedores"> Desenvolvedores </h2>
 
 <table> 
 <tr>
