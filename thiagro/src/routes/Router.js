@@ -1,21 +1,21 @@
 import React from "react";
-import { BrowserRouter, Router, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "../components/Header/Header";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import HomePage from "../pages/HomePage/HomePage";
 
-
-const Routers = () => {
+const Router = () => {
   return (
     <BrowserRouter>
       <Header/>     
-      <Router>
+      <Routes>
 
         <Route path="/" element={<HomePage/>} />
         <Route path="/*" element={<ErrorPage/>} />
 
-      </Router>
+      </Routes>
     </BrowserRouter>
   )
 }
 
-export default Routers 
+export default Router 
