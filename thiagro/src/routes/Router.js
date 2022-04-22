@@ -1,21 +1,24 @@
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "../components/Header/Header";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
-import HomePage from "../pages/HomePage/HomePage";
+import FeedPage from "../pages/FeedPage/FeedPage";
+import LoginPage from "../pages/LoginPage/LoginPage";
+import SingUpPage from "../pages/SignUpPage/SingUpPage";
 
 const Router = () => {
   return (
     <BrowserRouter>
-      <Header/>     
+      <Header/>
       <Routes>
 
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/*" element={<ErrorPage/>} />
-
+        <Route path="/" element={<LoginPage/>} />
+        <Route path="/cadastro" element={<SingUpPage/>} />
+        <Route path="/feed" element={<FeedPage/>} />
+        <Route path="/*" element={<ErrorPage/>}/>
       </Routes>
+      
     </BrowserRouter>
   )
 }
 
-export default Router 
+export default Router
