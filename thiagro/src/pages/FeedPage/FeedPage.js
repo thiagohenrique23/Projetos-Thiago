@@ -1,11 +1,11 @@
 import React from "react";
 
-const ErrorPage = () => {
+const FeedPage = () => {
   return ( 
   <di>
-    ErrorPage
+    FeedPage
   </di>
   );
 };
 
-export default ErrorPage
+export default FeedPage

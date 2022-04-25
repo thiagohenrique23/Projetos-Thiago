@@ -1,8 +1,7 @@
-import { ThemeProvider } from "@mui/material";
-import React from "react"
+import { ThemeProvider } from "@emotion/react";
+import React from "react";
 import theme from "./constants/theme";
 import Router from "./routes/Router";
-
 
 const App = () => {
   return (

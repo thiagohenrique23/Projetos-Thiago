@@ -1,21 +1,16 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "../components/Header/Header";
-import ErrorPage from "../pages/ErrorPage/ErrorPage";
-import HomePage from "../pages/HomePage/HomePage";
+import { createMuiTheme } from '@mui/material';
+import { neutralColor, primaryColor } from "./colors"
 
-const Router = () => {
-  return (
-    <BrowserRouter>
-      <Header/>     
-      <Routes>
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: primaryColor,
+      contrastText: "white"
+    },
+    text: {
+      primary: neutralColor
+    }
+  }
+})
 
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/*" element={<ErrorPage/>} />
-
-      </Routes>
-    </BrowserRouter>
-  )
-}
-
-export default Router 
+export default theme
