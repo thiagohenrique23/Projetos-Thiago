@@ -34,3 +34,8 @@ export const LogoImage = styled.img`
   width: 70vw;
   max-width: 350px;
 `
+
+export const ErrorPassword = styled.h1`
+    color: red;
+    font-size: 12px;
+`
