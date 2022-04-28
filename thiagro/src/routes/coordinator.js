@@ -9,3 +9,7 @@ export const goToSingUp = (Navigate) => {
 export const goToFeed = (Navigate) => {
   Navigate("/feed")
 }
+
+export const goToGame = (Navigate) => {
+  Navigate("/jogo-da-velha")
+}
