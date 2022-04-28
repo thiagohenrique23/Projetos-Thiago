@@ -5,7 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Title } from "./styled";
-import { goToLogin } from "../../routes/coordinator";
+import { goToFeed, goToLogin } from "../../routes/coordinator";
 import { Navigate, useNavigate } from "react-router-dom";
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <Title>Thiagro</Title>
+            <Title onClick={() => goToFeed(Navigate)}>Thiagro</Title>
           </Typography>
           <Button onClick={() => goToLogin(Navigate)} color="inherit">Login</Button>
         </Toolbar>
