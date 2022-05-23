@@ -13,3 +13,15 @@ export const goToFeed = (Navigate) => {
 export const goToGame = (Navigate) => {
   Navigate("/jogo-da-velha")
 }
+
+export const goToNews = (Navigate) => {
+  Navigate("/noticias")
+}
+
+export const goToMovie = (Navigate) => {
+  Navigate("/filmes")
+}
+
+export const goToAgro = (Navigate) => {
+  Navigate("/agro")
+}

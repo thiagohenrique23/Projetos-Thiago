@@ -20,7 +20,7 @@ const getLabel = (value) => {
   if (!value) {
     return null;
   }
-  return value > 0 ? 'O' : 'X';
+  return value > 0 ? '🌽' : '🥕';
 };
 
 function getWinner(v) {
@@ -117,9 +117,9 @@ const Game = () => {
       {(winner || itsATie) && (
         <div className="Game__menu">
           {winner ? (
-            <p>O vencedor é: {winner > 0 ? 'O' : 'X'} 😎</p>
+            <p>O vencedor é: {winner > 0 ? '🌽' : '🥕'} 😎</p>
           ) : (
-            <p>Empate 😁</p>
+            <p>Velha 👵</p>
           )}
           <button onClick={reset}>Reiniciar 😁</button>
         </div>

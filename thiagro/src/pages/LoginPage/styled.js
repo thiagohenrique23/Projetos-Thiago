@@ -27,7 +27,7 @@ export const ContainerInput = styled.div`
         left: 0;
         width: 100%;
         height: 100vh;
-        background: #000;
+        background: #FFF;
         z-index: 300;
         }
         @keyframes fadeIn {
