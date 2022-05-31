@@ -6,9 +6,10 @@ import { Navigate, useNavigate } from "react-router-dom";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { signUp } from "../../services/Request";
 import UseForm from "../../hooks/useForm";
+import UseUnprotectPage from "../../hooks/useUnprotectPage";
 
 const SingUpPage = () => {
-  
+  UseUnprotectPage()
   const Navigate = useNavigate()
   const [showPassword, setShowPassword] = useState(false);
   const { form, onChange, clearFields } = UseForm({ name: "", email: "",cpf: "",password: "",confirmation: ""})

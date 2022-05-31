@@ -8,9 +8,10 @@ import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { login } from "../../services/Request";
 import UseForm from "../../hooks/useForm";
 import Splash from "../../assets/logo.png"
+import UseUnprotectPage from "../../hooks/useUnprotectPage";
 
-const LoginPage = () => {
-
+const LoginPage = ({rightButtonText,setRightButtonText}) => {
+  UseUnprotectPage()
   const Navigate = useNavigate()
   const [showPassword, setShowPassword] = useState(false);
   const { form, onChange, clearFields } = UseForm({ email: "", password: "", })
@@ -45,7 +46,7 @@ const LoginPage = () => {
       <img src={logo} alt={"Logo"} />
     </ContairnerImg>
 
-    <form onSubmit={submit}>
+    <form onSubmit={submit} rightButtonText={rightButtonText} setRightButtonText={setRightButtonText}>
       <ContainerField>
         <TextField
           name={"email"}

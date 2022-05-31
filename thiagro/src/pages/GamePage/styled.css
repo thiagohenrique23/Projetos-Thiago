@@ -20,7 +20,7 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background: #d2691e;
+  background: #FFFFFF;
   border-radius: 10px;
   padding: 15px;
 }
@@ -33,7 +33,7 @@
 }
 
 .Game__board button {
-  border: 1px solid #d2691e;;
+  border: 1px solid #FFFFFF;;
   font-size: 4rem;
   line-height: 0;
 }
