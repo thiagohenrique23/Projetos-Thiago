@@ -27,8 +27,6 @@ const FeedPage = () => {
 
       <Button variant="contained" color={"primary"} margin={"normal"} onClick={() => goToGame(Navigate)}>Jogo da Velha</Button>
 
-      <Button variant="contained" color={"primary"} margin={"normal"} onClick={() => goToMovie(Navigate)}>Filmes</Button>
-
       <Button variant="contained" color={"primary"} margin={"normal"} onClick={() => goToAgro(Navigate)}>Produtos Agro</Button>
     </ContainerButton>
   </div>  

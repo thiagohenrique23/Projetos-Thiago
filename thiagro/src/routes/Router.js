@@ -5,7 +5,6 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import FeedPage from "../pages/FeedPage/FeedPage";
 import GamePage from "../pages/GamePage/GamePage";
 import LoginPage from "../pages/LoginPage/LoginPage";
-import MoviePage from "../pages/MoviePage/MoviePage";
 import NewsPage from "../pages/NewsPage/NewsPage";
 import SingUpPage from "../pages/SignUpPage/SingUpPage";
 
@@ -20,7 +19,6 @@ const Router = ({rightButtonText,setRightButtonText}) => {
         <Route path="/feed" element={<FeedPage/>}/>
         <Route path="/jogo-da-velha" element={<GamePage/>}/>
         <Route path="/noticias" element={<NewsPage/>}/>
-        <Route path="/filmes" element={<MoviePage/>}/>
         <Route path="/agro" element={<AgroPage/>}/>
         <Route path="/*" element={<ErrorPage/>}/>
       </Routes>

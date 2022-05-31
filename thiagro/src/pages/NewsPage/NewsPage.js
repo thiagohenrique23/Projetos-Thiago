@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import UseProtectPage from "../../hooks/useProtectPage";
-import { ContainerNews, NewsTitle } from "./styled";
+import { ContainerNews, ContainerNewsOne, NewsTitle, Title } from "./styled";
 
 const NewsPage = () => {
   UseProtectPage()
@@ -19,11 +19,11 @@ const NewsPage = () => {
       <ContainerNews>
         {news.map(news => {
           return (
-            <div key={news.id}>
-              <h3>{news.titulo}</h3>
-              <img src={news.imagens}/>
-              {news.introducao}
-            </div>
+            <ContainerNewsOne key={news.id}>
+              <Title>{news.titulo}</Title>
+              <h4>{news.introducao}</h4>
+              <h5>Link: {news.link}</h5>
+            </ContainerNewsOne>
           )
         })}
       </ContainerNews>
